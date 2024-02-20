@@ -123,6 +123,7 @@ img {
 /* About */
 
 .about {
+  margin-top: 80px;
   background-image: url(../img/about.jpg);
 }
 
