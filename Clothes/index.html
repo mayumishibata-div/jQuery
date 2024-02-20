@@ -15,37 +15,71 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <!-- キービジュアル -->
+  <div class="kv">
+    <h1 class="main-title">Clothes Shop</h1>
+    <div class="kv-img">
+      <img src="./img/slider.jpg" alt="">
+    </div>
+  </div>
   <!-- ヘッダー -->
   <header>
-    <nav class="nav-bar">
-      <ul class="nav-list">
-        <li class="nav-item">Products</li>
-        <li class="nav-item">About</li>
-        <li class="nav-item">Shop</li>
-        <li class="nav-item">Contact</li>
+    <nav class="header-nav">
+      <ul class="header-nav-list">
+        <li class="nav-item"><a href="">Products</a></li>
+        <li class="nav-item"><a href="">About</a></li>
+        <li class="nav-item"><a href="">Shop</a></li>
+        <li class="nav-item"><a href="">Contact</a></li>
       </ul>
     </nav>
   </header>
   <main>
-    <section class="kv">
-      <h1 class="header-title">Clothes Shop</h1>
-      <div class="kv-container">
-        <img src="./img/slider.jpg" alt="">
-      </div>
-    </section>
     
-    <section class="procuct">
+    <section class="product">
       <h2 class="section-title">
         PEODUCTS
       </h2>
+      <div class="product-wrapper">
+        <div class="product-content">
+          <img src="./img/item.jpg" alt="">
+          <p>item1</p>
+        </div>
+        <div class="product-content">
+          <img src="./img/item2.jpg" alt="">
+          <p>item2</p>
+        </div>
+        <div class="product-content">
+          <img src="./img/item3.jpg" alt="">
+          <p>item3</p>
+        </div>
+        <div class="product-content">
+          <img src="./img/item4.jpg" alt="">
+          <p>item4</p>
+        </div>
+        <div class="product-content">
+          <img src="./img/item5.jpg" alt="">
+          <p>item5</p>
+        </div>
+        <div class="product-content">
+          <img src="./img/item6.jpg" alt="">
+          <p>item6</p>
+        </div>
+        <div class="product-content">
+          <img src="./img/item7.jpg" alt="">
+          <p>item7</p>
+        </div>
+      </div>
     </section>
 
     <section class="about">
-      <h2 class="section-title">
-        ABOUT
-      </h2>
+      <hgroup class="about-header">
+        <h2 class="section-title">
+          ABOUT
+        </h2>
+        <h3 class="about-sub-title">SubTitle</h3>
+      </hgroup>
       <p>
-
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
       <div class="more-btn"><a href="#">MORE</a></div>
     </section>
@@ -54,21 +88,31 @@
       <h2 class="section-title">
         Shop
       </h2>
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18871.394775839963!2d139.69654460143377!3d35.66647308225837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188cb2eb3108d1%3A0xf11cd9b2395b6677!2z5p2x5Lqs6YO95riL6LC35Yy6!5e0!3m2!1sja!2sjp!4v1708336078267!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <p>X-XX-XX, Utagawacho, Shibuya-ku, Tokyo 150-0042 
+        <br>東京都渋谷区宇田川町X-XX-XX
+      </p>
     </section>
 
     <section class="contact">
-      Contact
+      <h2 class="section-title">
+        Contact
+      </h2>
+      <p class="contact-tel"><a href="">XX-XXXX-XXXX</a></p>
+      <p class="contact-mail"><a href="">XXXXXX@XXXX.mail</a></p>
     </section>
-    <footer>
+    <footer class="footer">
       <h3 class="footer-title">
         Clothes Shop
       </h3>
-      <ul>
-        <li>Products</li>
-        <li>About</li>
-        <li>Shop</li>
-        <li>Contact</li>
-      </ul>
+        <ul class="footer-list">
+          <li class="footer-item"><a href="#">Products</a></li>
+          <li class="footer-item"><a href="">About</a></li>
+          <li class="footer-item"><a href="">Shop</a></li>
+          <li class="footer-item"><a href="">Contact</a></li>
+        </ul>
       <p>&copy;Clothes Shop</p>
     </footer>
   </main>

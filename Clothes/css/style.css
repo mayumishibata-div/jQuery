@@ -1,0 +1,258 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+section {
+  max-width: 1188px;
+  padding: 0 4%;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.section-title {
+  padding: 80px 0 20px;
+  text-align: center;
+  font-size: 30px;
+  line-height: 39px;
+  color: #333333;
+  position: relative;
+}
+
+.section-title::after {
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 40px);
+  content: '';
+  background-color: #FF9D00;
+  width: 80px;
+  height: 2px;
+}
+
+/* 共通 */
+.about, .contact {
+  max-width: 100vw;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 0 0 80px 0;
+}
+
+.about h2,h3, p, .more-btn, .contact h2 {
+  color: #FFFFFF;
+}
+
+.contact-tel, .contact-mail {
+  font-size: 30px;
+  margin-top: 60px;
+  text-align: center;
+}
+
+/* キービジュアル */
+.kv {
+  max-width: 100vw;
+  position: relative;
+}
+
+.main-title {
+  position: absolute;
+  top: 125px;
+  left:150px;
+  font-size: 8rem;
+  color: #FFFFFF;
+  line-height: 10rem;
+  font-weight: 700;
+}
+
+/* ヘッダー */
+
+.header-nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.header-nav-list {
+  display: flex;
+  /* justify-content: flex-end; */
+  font-size: 2.0rem;
+  line-height: 2.6rem;
+}
+
+.nav-item {
+  background-color: #000000CB;
+  color: #FFFFFF;
+  padding: 20px 40px;
+  border-right: 1px solid #FFFFFF;
+}
+
+.nav-item:last-of-type {
+  border: none;
+}
+
+/* product */
+.product-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product-content {
+  margin-top: 60px;
+  padding: 0 1%;
+  width: 23%;
+}
+.product-content p {
+  margin-top: 20px;
+  text-align: center;
+  line-height: 2.1rem;
+}
+
+/* About */
+
+.about {
+  background-image: url(../img/about.jpg);
+}
+
+.about-header h3 {
+  font-size: 2.4rem;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.about p {
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  width: 700px;
+  padding: 40px 0;
+  margin: 0 auto;
+}
+
+.more-btn {
+  width: 300px;
+  height: 80px;
+  line-height: 80px;
+  font-size: 2.4rem;
+  text-align: center;
+  border: 1px solid #FFFFFF;
+  margin: 0 auto ;
+  position: relative;
+}
+
+.more-btn::after {
+  position: absolute;
+  content: ">";
+  transform: translateY(-50%);
+  top: 50%;
+  right: 50px;
+  width: 24px;
+  line-height: 32px;
+
+}
+
+.more-btn a {
+  display: block;
+  width: 100%;
+}
+
+
+/* shop  */
+.map {
+  height: 400px;
+  margin-top: 60px;
+}
+
+.map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.shop p {
+  color: #333333;
+  font-size: 2.0rem;
+  line-height: 2.7rem;
+  margin: 40px auto 60px;
+  text-align: center;
+}
+
+/* contact  */
+.contact {
+  line-height: 3.9rem;
+}
+
+.contact-tel::before {
+  content: "TEL:";
+}
+
+.contact-mail {
+  margin-top: 0;
+  padding-top: 40px;
+}
+
+.contact-mail::before {
+  content: "MAIL:";
+}
+
+.contact {
+  background-image: url(../img/contact.jpg);
+}
+
+
+/* フッター  */
+
+.footer {
+  padding-top: 80px;
+}
+
+.footer-title {
+  font-size: 2.0rem;
+  line-height: 2.6rem;
+  color: #333333;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.footer-list {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.footer-item {
+  margin: 0 40px;
+  position:relative;
+  font-size: 2.0rem;
+}
+
+.footer-item::after {
+  content:"";
+  display:inline-block;
+  width:1px;
+  height:30px;
+  background-color: #333333;
+  position:absolute;
+  top: 0;
+  right:-40px;
+}
+
+.footer-item::after:last-of-type {
+  display: none;
+}
+
+.footer p {
+  font-size: 1.4rem;
+  text-align: center;
+  color: #333333;
+  padding: 40px;
+}
+
