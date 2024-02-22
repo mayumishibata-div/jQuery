@@ -67,6 +67,7 @@ img {
 
 .main-title {
   position: absolute;
+  z-index: 2;
   top: 125px;
   left:150px;
   font-size: 8rem;
