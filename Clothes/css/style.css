@@ -258,3 +258,113 @@ img {
   color: #333333;
   padding: 40px;
 }
+
+@media screen and (max-width: 750px){
+  
+  .header-nav {
+    display: none;
+  }
+
+  .main-title {
+    top: 100px;
+    left: 30px;
+  }
+
+  .section-title {
+    padding: 120px 0 50px ;
+    font-size: 6rem;
+  }
+
+  .product-wrapper {
+    flex-direction: column;
+  }
+
+  .product-content {
+    margin-top: 80px;
+    width: 100%;
+    padding: 0;
+  }
+
+  .product-content p {
+    margin-top: 40px;
+    font-size: 3.2rem;
+  }
+  .about, .contact {
+    padding: 0 0 120px 0;
+  }
+
+  .about-header h3 {
+    margin-top: 60px;
+    font-size: 4.8rem;
+  }
+
+  .about p {
+    font-size: 3.2rem;
+    line-height: 4.3rem;
+    width: 700px;
+    padding: 80px 30px ;
+    margin: 0 auto;
+  }
+
+  .more-btn {
+    width: 600px;
+    height: 160px;
+    line-height: 160px;
+    font-size: 4.8rem;
+  }
+
+  .map {
+    margin-top: 80px;
+  }
+
+  .shop p {
+    font-size: 3.2rem;
+    line-height: 4.3rem;
+    margin: 40px auto 120px 
+  }
+
+  .contact {
+    line-height: 5.3rem;
+  }
+
+  .contact-tel, .contact-mail {
+    font-size: 4rem;
+    margin-top: 80px;
+    text-align: center;
+  }
+
+  .contact-mail {
+    margin-top: 0;
+  }
+
+  .footer-title {
+    font-size: 4.0rem;
+    line-height: 5.3rem;
+    color: #333333;
+    padding: 80px 0;
+    text-align: center;
+}
+
+  .footer-list {
+    flex-direction: column;
+  }
+
+  .footer-item {
+    margin: 0 40px;
+    position: relative;
+    font-size: 3.2rem;
+    line-height: 4.3rem;
+    padding: 40px;
+    text-align: center;
+  }
+  .footer-item:last-of-type {
+    padding: 0;
+  }
+
+  .footer p {
+    padding: 80px;
+    font-size: 2.8rem;
+  }
+}
+  
+  
