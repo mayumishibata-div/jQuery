@@ -98,6 +98,10 @@ img {
   border-right: 1px solid #FFFFFF;
 }
 
+.nav-item:hover {
+  color: #FF9D00
+}
+
 .nav-item:last-of-type {
   border: none;
 }
@@ -114,6 +118,7 @@ img {
   padding: 0 1%;
   width: 23%;
 }
+
 .product-content p {
   margin-top: 20px;
   text-align: center;
