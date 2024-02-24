@@ -15,4 +15,5 @@ $(function(){
 // カーソルを当てると×になる
 $(".header-menu").click(function () {
   $(this).toggleClass('active');
+  $('.header-nav').fadeToggle(500); //ヘッダーナビゲーションを500ミリ秒でフェードイン、フェードアウトさせる
 });
