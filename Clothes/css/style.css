@@ -82,6 +82,7 @@ img {
   position: fixed;
   top: 0;
   right: 0;
+  opacity: 80%;
 }
 
 .header-nav-list {
@@ -92,10 +93,11 @@ img {
 }
 
 .nav-item {
-  background-color: #000000CB;
+  background-color: #333333;
   color: #FFFFFF;
   padding: 20px 40px;
   border-right: 1px solid #FFFFFF;
+  opacity: 80%;
 }
 
 .nav-item:hover {
@@ -269,6 +271,78 @@ img {
   
   .header-nav {
     display: none;
+    top: 100px;
+    width: 420px;
+    height: calc(100vh - 100px);
+    background-color: #333333;
+    z-index: 2;
+    transition: all 0.6s;
+  }
+
+  .header-nav-list {
+    flex-direction: column;
+  }
+
+  .header-nav, .active {
+
+  }
+
+  .nav-item {
+    padding: 80px 0 0 0;
+    text-align: center;
+  }
+
+  .nav-item:first-of-type {
+    padding: 120px 0 0 0;
+  }
+
+  .header-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    background-color: #333333;
+    opacity: 1;
+    cursor: pointer;
+  }
+
+  .header-menu span {
+    display: inline-block;
+    transition: all .4s;/*アニメーションの設定*/
+    position: absolute;
+    left: 20px;
+    height: 2px;
+    background-color: #FFFFFF;
+  }
+
+  .header-menu span:nth-of-type(1) {
+    top:40px; 
+    width: 60%;
+  }
+  
+  .header-menu span:nth-of-type(2) {
+    top:60px;
+    width:30%;
+  }
+
+  /*activeクラスが付与されると線が回転して×に*/
+  .header-menu.active span:nth-of-type(1) {
+    top: 50%; /* 要素を垂直方向の中心に移動 */
+    left: 50%; /* 要素を水平方向の中心に移動 */
+    height: 2.8px; /* 線の太さ */
+    width: 70%; /* 正方形の対角線の長さに相当 */
+    transform: translate(-50%, -50%) rotate(-45deg); /* 中心を基準に回転 */
+    transform-origin: 50%; /* 変形の原点を中央に設定 */
+  }
+  
+  .header-menu.active span:nth-of-type(2) {
+    top: 50%; /* 同上 */
+    left: 50%; /* 同上 */
+    height: 2.8px; /* 線の太さ */
+    width: 70%; /* 正方形の対角線の長さに相当 */
+    transform: translate(-50%, -50%) rotate(45deg); /* 中心を基準に回転 */
+    transform-origin: 50%; /* 変形の原点を中央に設定 */
   }
 
   .main-title {

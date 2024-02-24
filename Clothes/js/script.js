@@ -1,3 +1,4 @@
+// スライダー 
 $(function(){
   $('.slider-list').slick({
       accessibility: false,
@@ -9,4 +10,9 @@ $(function(){
       autoplaySpeed: 1000,
       speed: 1000,
   });
+});
+
+// カーソルを当てると×になる
+$(".header-menu").click(function () {
+  $(this).toggleClass('active');
 });
