@@ -1,0 +1,16 @@
+div {
+  width: 200px;
+  height: 200px;
+}
+
+.a {
+  background-color: red;
+}
+
+.b {
+  background-color: aqua;
+}
+
+.c {
+  background-color: darkorange;
+}

@@ -1,0 +1,11 @@
+.bold {
+  font-weight: 700;
+}
+
+.toggle {
+  margin-left: 100px;
+}
+
+p{
+  display: none;
+}
