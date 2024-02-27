@@ -189,10 +189,42 @@ line-height: 5.5rem;
   font-size: 1.6rem;
 }
 
-.question-contact {
-  margin: 15px auto;
+/* Q＆A */
+.question-list li {
+  width: 700px;
+  padding: 15px 20px;
+  margin: 20px auto;
   text-align: center;
+  border: 1px solid #E0E0E0;
+  background-color: #E8FFD9;
+  position: relative;
 }
+
+.question-contact {
+  font-size: 20px;
+}
+
+.question-contact:before {
+content:"Q";
+position: absolute;
+left: 20px;
+}
+
+.question-contact-answer {
+  display: none;
+  margin: 20px auto 0;
+  font-size: 16px;
+}
+
+.question-contact-answer:before {
+  content:"A";
+  position: absolute;
+  left: 20px;
+  font-size: 20px;
+  }
+
+/* アコーディオンメニュー */
+
 
 /* フッター */
 
