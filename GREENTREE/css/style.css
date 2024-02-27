@@ -223,7 +223,27 @@ left: 20px;
   font-size: 20px;
   }
 
-/* アコーディオンメニュー */
+/* 矢印 */
+
+.question-contact:after {
+  position: absolute;
+  content:"";
+  top: 15px;
+  right: 20px;
+  border-top: solid 3px #000000;
+  border-right: solid 3px #000000;
+  transform: rotate(135deg);
+  transition-duration: 0.5s;
+  width: 20px;
+  height: 20px;
+}
+
+.question-contact.open:after {
+  top: 20px;
+  right: 20px;
+  transform: rotate(-45deg);
+}
+
 
 
 /* フッター */
