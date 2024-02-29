@@ -70,6 +70,11 @@ section {
   display: flex;
 }
 
+.header-nav-item-title:hover {
+  opacity: 50%;
+  transition: 0.5s
+}
+
 .header-nav-item {
   margin-right: 40px;
   text-align: left;
@@ -140,6 +145,10 @@ z-index: 1;
   margin: 60px auto 0;
   background-color: #3CAA00;
   box-shadow: 0px 5px 0px #2F8103;
+}
+
+.form-btn:hover {
+  box-shadow: none;
 }
 
 
