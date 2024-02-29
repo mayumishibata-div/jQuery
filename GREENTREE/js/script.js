@@ -27,3 +27,17 @@ $(function(){
       clickable: true,
     },
   });
+
+  $(function () {
+    const height = $(".header").height();
+    $("main").css("margin-top", height);
+  });
+  
+
+  $(".header-nav-list a[href*='#']").click(function(){
+    const pageLink = $(this).attr("href");
+    const pos = $(pageLink).offset().top;
+    $("body, html").animate({scrollTop: pos},500);
+    return false;
+  });
+  
