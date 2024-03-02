@@ -85,6 +85,10 @@ section {
   font-weight: 700;
 }
 
+.hamburger {
+  display: none;
+}
+
 /* kv */
 
 .kv {
@@ -279,10 +283,13 @@ position: relative;
   border: 1px solid #E0E0E0;
   background-color: #E8FFD9;
   position: relative;
+  flex-wrap: wrap;
 }
 
 .question-contact {
   font-size: 20px;
+  width: 90%;
+  margin-left: 20px;
 }
 
 .question-contact:before {
@@ -302,11 +309,13 @@ left: 20px;
   position: absolute;
   left: 20px;
   font-size: 20px;
+  
   }
 
 /* 矢印 */
 
 .question-contact:after {
+  width: 5%;
   position: absolute;
   content:"";
   top: 15px;
@@ -337,3 +346,128 @@ left: 20px;
   padding: 30px 0;
 }
 
+@media screen and (max-width: 760px){
+  
+  .header-logo {
+    width: 13%;
+  }
+
+  /* ハンバーガー */
+  /* .header-nav-list { */
+    /* display: none; */
+  }
+
+  /* 三本線 */
+  .hamburger {
+    display: block;
+    position: relative;
+    width: 46px;
+    height: 35px;
+  }
+
+  .hamburger span {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    display: inline-block;
+    background-color: #707070;
+    transition: all 0.5s;
+  }
+
+  .hamburger span:nth-of-type(1){
+    top: 0;
+  }
+
+  .hamburger span:nth-of-type(2){
+    top: 50%;
+  }
+
+  .hamburger span:nth-of-type(3){
+    bottom: 0;
+  }
+
+  /* ×になる */
+  .hamburger.active span:nth-of-type(1){
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%) rotate(-45deg);
+    width: 100%;
+  }
+
+  .hamburger.active span:nth-of-type(2){
+    opacity: 0;
+  }
+
+  .hamburger.active span:nth-of-type(3){
+    bottom:  50%;
+    right:  0;
+    transform: translateY(-50%) rotate(45deg);
+    width: 100%;
+  }
+
+  /* グローバルナビゲーション用 */
+  .header-nav {
+    position: fixed;
+    z-index: -1;
+    opacity: 0;
+    top: 120px;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    transition: all 0.5s;
+  }
+
+  .header-nav-list {
+    flex-direction: column;
+    padding: 0 0 40px 0;
+  }
+
+  .header-nav-item {
+    margin: 40px auto 0;
+    text-align: center;
+  }
+
+/* グローバルナビゲーション JSでつけるクラス */
+  #g-nav.open-active {
+    z-index: 999;
+    opacity: 0.8;
+  }
+
+  /* detail  */
+
+  .detail-list {
+    flex-direction: column;
+  }
+
+  .detail-item {
+    width: 100%;
+  }
+
+  .detail-item p {
+    margin: 40px auto 40px;
+  }
+
+  /* trial  */
+
+  .trial-list {
+    flex-direction: column;
+  }
+
+  .trial-item {
+    margin-right: 0;
+  }
+
+  /* Q＆A */
+
+  .question-list li {
+    width: 100%;
+    padding: 20px 10px 20px 15px;
+  }
+
+  .question-contact:after {
+    right: 20px;
+    width: 18px;
+    height: 18px;
+  }
+}
